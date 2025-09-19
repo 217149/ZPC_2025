@@ -1,4 +1,41 @@
 baseURL = 'https://github.com/217149/ZPC_2025'
-languageCode = 'en-us'
-title = 'Ukázkoví stránka pro ZPC'
-theme = 'hugo-narrow'
+
+defaultContentLanguage = "en"
+# Automatically generate robots.txt
+enableRobotsTXT = true
+languageCode = "en"
+theme = "gokarna"
+title = "ZPC 2025"
+
+[menu]
+  [[menu.main]]
+    # Display name
+    name = "Projekty"
+
+    # Relative URL slug (appended to baseURL)
+    url = "/posts/"
+
+    # Lower weights are listed first in the menu (leftmost); higher weights are
+    # listed last in the menu (rightmost)
+    weight = 1
+
+  [[menu.main]]
+    name = "O mně"
+    url = "about_me.md"
+    weight = 2
+    
+  [[menu.main]]
+    # Unique identifiers are required for menu entries without a name property,
+    # or for menu entries which re-use a name
+    identifier = "github"
+
+    # Absolute URL to external resource
+    url = "https://github.com/217149"
+    weight = 3
+    
+    # Surround the menu entry (or name) with HTML content, such as Feather
+    # icons: https://feathericons.com
+    pre = "<span data-feather='github'></span>"
+    post = ""
+
+
